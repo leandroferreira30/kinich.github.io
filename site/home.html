@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="imagens/Kinich Solares 200 ok.png" type="image/x-icon">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <header>
+        <img src="imagens/Kinich Solares 200 ok.png" alt="" id="logo">
+        <nav id="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="agendar.html">Agendar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Como Funciona A Energia Solar</h1>
+        <img src="imagens/placas-solares.png" alt="" id="painelgrande">
+        
+        <p>O funcionamento da energia solar acontece da seguinte maneira: os módulos fotovoltaicos captam a luz do sol e produzem a energia. Essa é transportado até o inversor solar que irá converter a energia gerada pelo sistema para as características da rede elétrica. A energia é gerada graças ao efeito fotovoltaico.</p>
+
+        <p>Para que essa conversão da radiação solar em energia elétrica seja realizada de forma mais eficiente, é ideal que a luz solar incida diretamente nas células fotovoltaicas. Assim, quanto maior a incidência direta nos painéis solares, maior será a geração de energia.</p>
+
+        <p>A posição perfeita para as placas solares, portanto, é aquela na qual não há áreas de sombras, fazendo com que elas recebam os raios solares durante o dia inteiro. Isso proporciona a liberação ininterrupta de corrente elétrica, que será capturada pelos filamentos condutores dos painéis fotovoltaicos.</p>
+
+        <p>Após esse processo, a energia gerada é encaminhada para o inversor solar. Esse equipamento transformará a energia produzida no módulo fotovoltaico, que é do tipo corrente contínua (CC), em corrente alternada (CA). Isso porque, quando percorrida em um circuito, a corrente contínua não muda o seu sentido de circulação, havendo a necessidade de convertê-la em corrente alternada para que ela se torne apropriada para o consumo.</p>
+         
+        <br>
+
+        
+    </main>
+    <section id="calcular">
+        <div>
+            <h2 id="titulo"><strong>Faça as contas!</strong></h2>
+            <h4 id="subtitulo">Calcule quantas placas solares serão necessárias para suprir seu gasto de energia!</h4>
+        </div>
+        
+        
+        <form action="lol.php" method="get">
+            
+            <div>
+                <img src="imagens/calculadora.png" alt="" id="calculadora">
+            </div>
+
+            <div class="campo">
+                <label for="consumo"> <strong> Escreva aqui, em kWh, aproximadamente quanta energia você gasta por mês:</strong> </label>
+                <input type="number" name="consumo" id="consumo">
+            </div>
+            
+
+            <br>
+
+            <div class="campo">
+                <label for="painel"><strong>Escolha o modelo do painel: </strong></label>
+                <select name="painel" id="painel">
+                    <option value="210">Placas de 210Wp</option>
+                    <option value="340">Placas de 340Wp</option>
+                    <option value="465">Placas de 465Wp</option>
+                </select>
+            </div>
+
+            <br>
+
+            <input class="botao" type="submit" value="Calcular!" onclick="return energy()">
+            <br>
+            <p id="resp"></p>
+        </form>
+        
+        <br>
+
+        <a id="atalho" href="agendar.html">Agende uma Visita !</a>
+
+    </section>
+    
+
+</body>
+</html>

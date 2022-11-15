@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="agendar.css">
+    <link rel="shortcut icon" href="imagens/Kinich Solares 200 ok.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="imagens/Kinich Solares 200 ok.png" alt="" id="logo">
+        <nav id="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="agendar.html">Agendar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div>
+            <h1 id="titulo">Agendar Visita de Um Profissional</h1>
+            <br>
+        </div>
+    
+        <!-- Início do formulário -->
+        <form>
+            
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Digíte seu nome" required autofocus>
+            </div>
+    
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digíte seu sobrenome" required>
+            </div>
+            
+    
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" placeholder="Digíte seu email" required>
+            </div>
+    
+            <div class="campo">
+                <label for="cidade"><strong>Cidade</strong></label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digíte sua cidade" required>
+                
+            </div>
+
+            <div class="campo">
+                <label for="endereco"><strong>Endereço</strong></label>
+                <input type="text" name="endereco" id="endereco" placeholder="Digíte seu endereço" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefone"><strong>Telefone</strong></label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(xx)xxx-xxx" required>
+            </div>
+
+            <div>
+                <button class="botao" type="submit"  onsubmit="">Enviar</button>            
+            </div>
+        </form>
+    </main>       
+</body>
+</html>
